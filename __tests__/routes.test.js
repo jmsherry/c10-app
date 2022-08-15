@@ -18,7 +18,7 @@ describe("Get route", () => {
   });
   it("page should return hello world", async () => {
     const res = await request(server).get("/api/v1/message");
-    console.log(res);
+    // console.log(res);
     expect(res.statusCode).toEqual(200);
     expect(res.body).toEqual("Special Message");
   });
