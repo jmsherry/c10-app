@@ -2,9 +2,10 @@ language: node_js
 node_js:
 - 16.16.0
 install:
-- npm install
+- npm ci
 script:
 - npm run test
+- npm build
 branches:
   only:
   - main
